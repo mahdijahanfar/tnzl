@@ -1,0 +1,99 @@
+@font-face {
+    font-family: iransans;
+    src: url("../fonts/IRANSansWebFaNum.woff2") format("woff2");
+}
+/* @font-face {
+    font-family: uthmantaha;
+    src: url("../fonts/uthman-taha.ttf") format("ttf");
+} فونتش خرابه ولی یه فونت عثمان طه حتما میخوایم برا متن قران که نشد تا آخر پیدا کنم*/ 
+@font-face {
+    font-family: andalus;
+    src: url("../fonts/Far_Andalus.ttf") format("ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 0.460em;
+    box-sizing: border-box;
+    font-family: 'iransans',
+        -apple-system,
+        BlinkMacSystemFont,
+        Segoe UI,
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        Fira Sans,
+        Droid Sans,
+        Helvetica Neue,
+    sans-serif;
+}
+
+body {
+    direction: rtl;
+    font-size: 1.5rem;
+    color: #000000b0;
+}
+
+a{
+    text-decoration: none;
+    color: #000000b0;
+}
+
+ul{
+    list-style-type: none; 
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: iransans, sans-serif;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+select{
+    background-color: inherit;
+    padding: 0;
+    border: none;
+    cursor: inherit;
+    width: 100%;
+    font-size: initial;
+}
+textarea{resize: vertical;}
+
+@keyframes spn {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+/* برای چرخش خورشید قسمت هدر نتونستم بلاک بالا را تو قسمت مربوط به خودش
+(یعنی این آدرس:'
+    ./../../src/components/header/styles.js'
+)
+بنویسم */
+
+@media (min-width: 600px) {
+    html {
+        font-size: 0.5417em;
+    }
+}
+@media (min-width: 993px) {
+    html{
+        font-size: 0.625em;
+    }
+}
+/* 
+    font-size: 0.625em;//برای دسکتاپ
+    font-size: 0.5417em;//برای تب لت
+    font-size: 0.460em;//برای موبایل
+*/
